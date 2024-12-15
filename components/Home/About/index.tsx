@@ -65,15 +65,8 @@ const About = () => {
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
                 DR. Fietber S. Raco, M.Si
               </h2>
-              <h3 className="relative mb-6 text-xl font-bold text-black dark:text-white xl:text-3xl">
-                Visi
-              </h3>
-              <p>
-                MINAHASA SELATAN MAJU DAN SEJAHTERA LEWAT PEMUDA YANG UNGGUL DAN
-                OLAHRAGA YANG SPORTIF.
-              </p>
               <h3 className="relative my-6 text-xl font-bold text-black dark:text-white xl:text-3xl">
-                Misi
+                Biodata
               </h3>
               <div className="mt-7.5 flex items-center gap-5">
                 <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">

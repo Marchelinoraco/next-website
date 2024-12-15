@@ -4,12 +4,9 @@ import Config from "@/app/config/config";
 import Image from "next/image";
 
 export default async function Page({ params }: { params: { slug: string } }) {
-  const response = await fetch(
-    `${Config.ipPUBLIC}/beritaolahraga/${params.slug}`,
-    {
-      cache: "no-store",
-    },
-  );
+  const response = await fetch(`${Config.ipPUBLIC}/berita/${params.slug}`, {
+    cache: "no-store",
+  });
 
   // Cek apakah respons API berhasil
   if (!response.ok) {
@@ -30,10 +27,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <div className="animate_top rounded-md border border-stroke bg-white p-7.5 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:p-10">
           <div className="mb-10 w-full overflow-hidden">
             <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
-              {data?.gambar_berita_olahraga ? (
+              {data.gambar ? (
                 <Image
-                  src={`${Config.ipPUBLIC}/images/${data?.gambar_berita_olahraga}`} // Gunakan data.gambar
-                  alt={data.judul_berita_olahraga} // Gunakan data.judul_berita
+                  src={`${Config.ipPUBLIC}/images/${data.gambar}`} // Gunakan data.gambar
+                  alt={data.judul_berita} // Gunakan data.judul_berita
                   fill
                   className="rounded-md object-cover object-center"
                 />
@@ -44,23 +41,23 @@ export default async function Page({ params }: { params: { slug: string } }) {
           </div>
 
           <h2 className="mb-5 mt-11 text-center text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
-            {data.judul_berita_olahraga}
+            {data.judul_berita}
           </h2>
 
           <ul className="mb-9 flex flex-col gap-5 2xl:gap-7.5">
             <li>
               <span className="text-black dark:text-white">Author: </span>{" "}
-              {data.nama_pembuat_berita_olahraga || "Unknown"}
+              {data.nama_pembuat_berita || "Unknown"}
             </li>
             <li>
               <span className="text-black dark:text-white">
-                Published On: {data.tanggal_berita_olahraga || "Unknown Date"}
+                Published On: {data.tanggal_berita || "Unknown Date"}
               </span>
             </li>
           </ul>
 
           <div>
-            <p>{data.isi_berita_olahraga}</p>
+            <p>{data.isi_berita}</p>
           </div>
         </div>
       </div>

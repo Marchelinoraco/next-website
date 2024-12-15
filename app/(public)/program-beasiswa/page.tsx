@@ -1,6 +1,5 @@
 "use client"; // Ensure this page is rendered client-side only
 
-import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic"; // For dynamic imports
@@ -42,6 +41,7 @@ const NewsPage = () => {
             </div>
             <div className="px-4">
               <ReactWhatsapp
+                element="button"
                 number="+62 82188884401"
                 message="Hello, I'm interested in the scholarship program!"
                 className="mt-1 rounded-xl bg-[#D9D9D9] p-1 text-xs duration-300 hover:-translate-y-1 hover:bg-green-400 sm:p-2 sm:text-[16px] min-[768px]:p-3"

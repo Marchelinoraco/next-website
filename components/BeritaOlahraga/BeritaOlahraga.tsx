@@ -9,6 +9,7 @@ const BeritaOlahraga = ({ blog }) => {
     judul_berita_olahraga,
     tanggal_berita_olahraga,
     gambar_berita_olahraga,
+    id,
   } = blog;
 
   return (
@@ -31,7 +32,7 @@ const BeritaOlahraga = ({ blog }) => {
         className="animate_top rounded-lg bg-white p-4 pb-9 shadow-solid-8 dark:bg-blacksection"
       >
         <Link
-          href={`/berita-olahraga`}
+          href={`/berita-olahraga`} // Gunakan slug di URL
           className="relative block aspect-[368/239]"
         >
           <Image
@@ -43,7 +44,9 @@ const BeritaOlahraga = ({ blog }) => {
 
         <div className="px-4">
           <h3 className="mb-3.5 mt-7.5 line-clamp-2 inline-block text-lg font-medium text-black duration-300 hover:text-primary dark:text-white dark:hover:text-primary xl:text-itemtitle2">
-            <Link href={`/berita-olahraga/${judul_berita_olahraga}`}>
+            <Link href={`/berita-olahraga/${id}`}>
+              {" "}
+              {/* Ganti dengan slug */}
               {`${judul_berita_olahraga ? judul_berita_olahraga.slice(0, 40) : "Judul tidak tersedia"}...`}
             </Link>
           </h3>

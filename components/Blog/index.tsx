@@ -13,8 +13,12 @@ import Config from "@/app/config/config";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
+interface Galeri {
+  gambar: string; // Properti lain bisa ditambahkan jika ada
+}
+
 const Blog = () => {
-  const [galeris, setGaleri] = useState([]);
+  const [galeris, setGaleri] = useState<Galeri[]>([]);
   const getGaleri = async () => {
     try {
       const response = await axios.get(`${Config.ipPUBLIC}/galeri`);

@@ -1,7 +1,4 @@
 "use client";
-
-import Image from "next/image";
-import BlogData from "@/components/Blog/blogData";
 import BlogItem from "@/components/Blog/BlogItem";
 import axios from "axios";
 import Config from "@/app/config/config";
