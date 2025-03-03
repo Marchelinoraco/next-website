@@ -76,33 +76,6 @@ const Footer = () => {
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
                     Layanan
                   </h4>
-
-                  <ul>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        SIPANDAI
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        SIPGTK
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        LMS
-                      </a>
-                    </li>
-                  </ul>
                 </motion.div>
 
                 <motion.div
@@ -163,7 +136,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="https://sulutprov.go.id/"
+                        href="https://minselkab.go.id/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Facebook
@@ -171,7 +144,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="https://sulutprov.go.id/"
+                        href="https://minselkab.go.id/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Tiktok
@@ -179,7 +152,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="https://sulutprov.go.id/"
+                        href="https://minselkab.go.id/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Instagram
@@ -238,7 +211,7 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-5">
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://minselkab.go.id/" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
